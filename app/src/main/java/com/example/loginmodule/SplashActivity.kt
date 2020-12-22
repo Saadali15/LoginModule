@@ -4,13 +4,10 @@ package com.example.loginmodule
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 
 
-class SplashActivity1 : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -29,7 +26,9 @@ class SplashActivity1 : AppCompatActivity() {
                         } catch (e: InterruptedException) {
                         }
                         //YOUR INTENT CODE HERE
-                        startActivity(Intent(this@SplashActivity1,MainActivity::class.java))
+                        startActivity(Intent(this@SplashActivity,MainActivity::class.java))
+                        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+                        finish()
                     }
 
                 }
