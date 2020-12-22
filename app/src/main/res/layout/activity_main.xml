@@ -62,9 +62,10 @@
         android:hint="Password"
         android:inputType="textPassword"
         tools:text="Password"
+
         android:textColor="@color/white"
         android:paddingStart="15dp"
-        android:textColorHint="#666666"
+        android:textColorHint="@color/white"
         android:background="@drawable/rectangular"
         android:layout_gravity="center_vertical"
 
@@ -101,7 +102,7 @@
             android:layout_marginTop="11dp"
             android:layout_weight="1"
             android:background="@drawable/rectangular"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:text="Dark Theme"
             android:layout_marginEnd="5dp"
             />
@@ -110,14 +111,14 @@
             android:id="@+id/LighButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="11dp"
             android:layout_weight="1"
-            android:alpha="0.2"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:layout_marginStart="5dp"
+            android:alpha="0.5"
             android:background="@drawable/grey_rectangle"
-            android:text="Light Theme" />
+            android:text="Light Theme"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

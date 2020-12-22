@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             // your code to perform when the user clicks on the button
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             delegate.applyDayNight()
-            Toast.makeText(this@MainActivity, "login", Toast.LENGTH_SHORT).show()
+
         }
 
         val LightButton = findViewById(R.id.LighButton) as Button
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             delegate.applyDayNight()
-            Toast.makeText(this@MainActivity, "Light button", Toast.LENGTH_SHORT).show()
+
         }
 
     }
